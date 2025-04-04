@@ -1,0 +1,143 @@
+/* Fondo con imagen responsiva y fijada */
+body {
+    background-image: url("vecteezy_white-background-with-blue-geometric-and-white-line-pattern_7677104-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #b8d5f4;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+        background-position: top;
+    }
+}
+
+/* Efecto degradado en los bordes */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+    z-index: -1;
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+    text-shadow: 3px 3px 6px rgba(0, 123, 255, 0.5);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: #ffcc00;
+    text-shadow: 4px 4px 8px rgba(255, 204, 0, 0.7);
+    transform: scale(1.1);
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background: rgba(30, 30, 30, 0.9); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Estilos para inputs, select y textarea */
+input, textarea, select {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Contenedor del logo principal */
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+}
+
+/* Contenedor del video responsivo */
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Ajuste responsivo del video */
+@media (max-width: 768px) {
+    .video-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+
+/* Contenedor del logo secundario */
+.logo1-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 85px;
+}
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#playPauseButton {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#playPauseButton:hover {
+    background: #d5d9ec;
+}
+
+#volumeSlider {
+    width: 100px;
+    accent-color: #e6c3a3;
+}

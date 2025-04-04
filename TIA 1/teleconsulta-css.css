@@ -1,0 +1,63 @@
+body {
+    background-color: #91a7f5;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+/* Id del objeto en página HTML */
+.img-preview {
+    width: 50%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+
+/* Modificacion color de la división donde se encuentra el paciente */
+/* Estilo para la sección de datos del paciente */
+#datosPaciente {
+    background-color: #f8d7da; /* Rojo claro */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* Modificacion color de la división donde se encuentra el paciente */
+/* Estilo para la sección de datos del paciente */
+#datosPaciente {
+    background-color: #a48cff  ; /* violeta */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+
+/* Modificacion color de la división donde se encuentra el doctor */
+
+#datosDoctor {
+    background-color: #6098ef ; /* azul */
+    padding: 15px;
+    border-radius: 5px;
+}
+/* Modificacion color de la división donde se encuentra el diagnóstico */
+
+#diagnostico 
+{
+        background-color: #c3ebf4 ; /* azul cielo claro */
+        padding: 30px;
+        border-radius: 5px;
+    
+}
