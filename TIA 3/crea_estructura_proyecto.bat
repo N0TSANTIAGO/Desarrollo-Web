@@ -1,23 +1,23 @@
 :: Crear estructura de directorios
-mkdir PRo-api
-mkdir piscinas-api\server
-mkdir piscinas-api\server\config
-mkdir piscinas-api\server\models
-mkdir piscinas-api\server\repositories
-mkdir piscinas-api\server\routes
-mkdir piscinas-api\server\migrations
-mkdir piscinas-api\client
-mkdir piscinas-api\client\css
-mkdir piscinas-api\client\js
+mkdir proyectos_pia
+mkdir proyectos_pia\server
+mkdir proyectos_pia\server\config
+mkdir proyectos_pia\server\models
+mkdir proyectos_pia\server\repositories
+mkdir proyectos_pia\server\routes
+mkdir proyectos_pia\server\migrations
+mkdir proyectos_pia/server
+mkdir proyectos_pia\client\css
+mkdir proyectos_pia\client\js
 
 :: Crear archivos
-type nul > piscinas-api\server\config\database.js
-type nul > piscinas-api\server\models\Usuario.js
-type nul > piscinas-api\server\repositories\usuarios.js
-type nul > piscinas-api\server\routes\usuarios.js
-type nul > piscinas-api\server\server.js
-type nul > piscinas-api\server\migrations\001-create-usuarios.sql
-type nul > piscinas-api\client\index.html
-type nul > piscinas-api\client\css\style.css
-type nul > piscinas-api\client\js\app.js
-type nul > piscinas-api\package.json
+type nul > proyectos_pia\server\config\database.js
+type nul > proyectos_pia\server\models\Usuario.js
+type nul > proyectos_pia\server\repositories\usuarios.js
+type nul > proyectos_pia\server\routes\usuarios.js
+type nul > proyectos_pia\server\server.js
+type nul > proyectos_pia\server\migrations\001-create-usuarios.sql
+type nul > proyectos_pia\client\index.html
+type nul > proyectos_pia\client\css\style.css
+type nul > proyectos_pia\client\js\app.js
+type nul > proyectos_pia\package.json
