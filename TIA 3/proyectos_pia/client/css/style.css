@@ -1,5 +1,6 @@
-:root {
-  --primary: rgba(129, 230, 217, 0.6);
+:root
+{
+--primary: rgba(129, 230, 217, 0.6);
   --secondary: rgba(255, 255, 255, 0.1);
   --accent: rgba(202, 169, 250, 0.4);
   --glass-border: rgba(255, 255, 255, 0.3);
@@ -81,7 +82,7 @@ label {
   color: #eaeaea;
 }
 
-input {
+input, select {
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -90,9 +91,16 @@ input {
   color: white;
   font-size: 16px;
   backdrop-filter: blur(4px);
+  margin-bottom: 16px;
 }
 
-input:focus {
+input::placeholder,
+select {
+  color: #dcdcdc;
+}
+
+input:focus,
+select:focus {
   outline: none;
   border-color: var(--accent);
 }
@@ -130,5 +138,18 @@ input:focus {
 
   .container {
     padding: 20px 10px;
+    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+button:hover {
+  color: #21618c;
+}
+button:hover,
+h1:hover,
+h2:hover,
+label:hover {
+  color: #21618c;
+  cursor: pointer;
+}
+
+
   }
 }
