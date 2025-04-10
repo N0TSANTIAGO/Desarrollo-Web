@@ -1,5 +1,6 @@
-:root {
-  --primary: rgba(129, 230, 217, 0.6);
+:root
+{
+--primary: rgba(129, 230, 217, 0.6);
   --secondary: rgba(255, 255, 255, 0.1);
   --accent: rgba(202, 169, 250, 0.4);
   --glass-border: rgba(255, 255, 255, 0.3);
@@ -137,5 +138,18 @@ select:focus {
 
   .container {
     padding: 20px 10px;
+    h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+button:hover {
+  color: #21618c;
+}
+button:hover,
+h1:hover,
+h2:hover,
+label:hover {
+  color: #21618c;
+  cursor: pointer;
+}
+
+
   }
 }
