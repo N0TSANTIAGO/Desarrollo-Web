@@ -1,10 +1,9 @@
-CREATE TABLE usuarios (
-    id SERIAL PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
-    documento VARCHAR(20) UNIQUE NOT NULL,
-    fecha_ingreso TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    fecha_salida TIMESTAMP,
-    estado VARCHAR(20) DEFAULT 'DENTRO'
+CREATE TABLE tipo_proyecto (
+    id smallserial PRIMARY KEY,
+    codigo varchar(8) UNIQUE,
+    descripcion varchar NOT NULL,
+    abreviatura varchar(6) NOT NULL,
+    fecha_registro timestamp
 );
 
-CREATE INDEX idx_usuarios_estado ON usuarios(estado);
+select * from tipo_proyecto
