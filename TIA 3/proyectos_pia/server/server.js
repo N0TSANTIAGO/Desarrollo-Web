@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const usuariosRouter = require('./routes/usuarios');
+const tipo_proyectoRouter = require('./routes/tipo_proyecto');
 
 const app = express();
 
@@ -9,11 +9,11 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use('/api/usuarios', usuariosRouter);
+app.use('/api/tipo_proyecto', tipo_proyectoRouter);
 
 // Ruta de prueba
 app.get('/', (req, res) => {
-  res.json({ message: 'API de Control de Piscinas' });
+  res.json({ message: 'API de Control de Proyectos' });
 });
 
 // Manejo de errores

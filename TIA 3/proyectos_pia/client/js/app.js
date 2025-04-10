@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const baseUrl = 'http://localhost:3000/api/usuarios';
+  const baseUrl = 'http://localhost:3000/api/tipo_proyecto';
   const btnListar = document.getElementById('btn-listar');
   const btnCrear = document.getElementById('btn-crear');
   const btnActualizar = document.getElementById('btn-actualizar');
