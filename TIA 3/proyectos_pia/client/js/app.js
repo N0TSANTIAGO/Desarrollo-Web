@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnCrear.addEventListener('click', async () => {
     const { nombre, documento, tipoProyecto, docente } = getFormData();
-    const usuario = { nombre, documento, tipoProyecto, docente };
+    const  tipo_proyecto = { nombre, documento, tipoProyecto, docente };
 
     try {
       const response = await fetch(baseUrl, {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(usuario)
+        body: JSON.stringify( tipo_proyecto)
       });
       const data = await response.json();
       showResponse(response.status, data);
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const usuario = { nombre, documento, tipoProyecto, docente };
+    const  tipo_proyecto = { nombre, documento, tipoProyecto, docente };
 
     try {
       const response = await fetch(`${baseUrl}/${id}`, {
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(usuario)
+        body: JSON.stringify( tipo_proyecto)
       });
       const data = await response.json();
       showResponse(response.status, data);
