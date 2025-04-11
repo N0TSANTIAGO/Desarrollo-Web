@@ -1,6 +1,6 @@
-const { project } = require('pg');
+const { Pool } = require('pg');
 
-const project = new project({
+const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
   database: 'proyectos_pia',
@@ -9,6 +9,6 @@ const project = new project({
 });
 
 module.exports = {
-  query: (text, params) => project.query(text, params),
-  project
+  query: (text, params) => pool.query(text, params),
+  pool
 };
